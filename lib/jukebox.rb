@@ -21,8 +21,8 @@ end
 def list songs
 counter = 0
 songs.each_with_index { |value, index|
-  puts index+1 "#{value}"} 
-  
+  puts index+1 "#{value}"}
+
 
 end
 end
