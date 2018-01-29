@@ -42,7 +42,21 @@ def exit_jukebox
 end
 
 
-def run 
+def run songs
 help
+reply = ""
+puts "Please enter a command:"
 
+until reply == "exit"
+  reply = gets.chomp
+if reply == "help"
+  help
+elsif reply == "list"
+  list(my_songs)
+elsif reply == "play"
+  play(my_songs)
+else
+end
+end
+exit_jukebox
 end
