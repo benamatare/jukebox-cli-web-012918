@@ -35,9 +35,14 @@ if answer.to_i == number + 1 || answer == song
 end
 end
 puts "Invalid input, please try again"
-
 end
 
 def exit_jukebox
   puts "Goodbye"
+end
+
+
+def run 
+help
+
 end
