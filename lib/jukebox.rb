@@ -10,11 +10,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def say_hello name
-  "Hi #{name}"
+def exit_jukebox
+  puts "Goodbye"
 end
-
-puts "Enter your name:"
-users_name = gets.chomp
-
-puts say_hello users_name
