@@ -25,6 +25,18 @@ songs.each_with_index { |value, index|
 
 end
 
+def play songs
+puts "Please enter a song name or number:"
+answer = gets.chomp
+songs.each_with_index do |song, number|
+if answer == number+1 || answer = song
+  puts "Playing #{song}"
+  return song
+end
+end
+puts "Invalid input, please try again"
+
+end
 
 def exit_jukebox
   puts "Goodbye"
